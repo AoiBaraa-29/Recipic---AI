@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".CameraActivity">
+
+    <TextureView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/textureView" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@id/imageView"
+        android:background="#9C4040"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textureView">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:layout_marginRight="20dp"
+            android:id="@+id/imgBtn"
+
+            android:backgroundTint="#2CA5BC"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:id="@+id/cameraBtn"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#2CA5BC"/>
+
+    </LinearLayout>
+
+<!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="Ingredient"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_below="@id/linLayout"
+        />-->
+
+</RelativeLayout>
